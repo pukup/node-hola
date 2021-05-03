@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node index.js",
-    "test": "node_modules/.bin/mocha --exit"
+    "test": "node_modules/.bin/mocha --w"
   },
   "dependencies": {
     "express": "4.16.3",
