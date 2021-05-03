@@ -1,7 +1,7 @@
-FROM node:7
-WORKDIR /app
-COPY package.json /app
-RUN npm install
-COPY . /app
-CMD node index.js
-EXPOSE 3000
+from node:lts-alpine3.10
+run apk add --no-cache git;
+run git clone https://github.com/pukup/node-hola/
+workdir /cibersec-node-docker-jenkins-deploy
+run npm install;
+expose 3000
+cmd ["node", "index.js"];
